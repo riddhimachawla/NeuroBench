@@ -12,21 +12,32 @@ NeuroBench is an EEG motor imagery classification framework built using the BCI 
 
 ## Pipeline Implemented
 
+## Pipeline
+
+```text
 Raw EEG (.gdf)
-↓
+      │
+      ▼
 Event Extraction
-↓
+      │
+      ▼
 Epoch Creation
-↓
+      │
+      ▼
 EEG Channel Selection
-↓
+      │
+      ▼
 Bandpass Filtering (8–30 Hz)
-↓
+      │
+      ▼
 NumPy Conversion
-↓
+      │
+      ▼
 CSP Feature Extraction
-↓
+      │
+      ▼
 SVM Classification
+```
 
 ## Current Results
 
