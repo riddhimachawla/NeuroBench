@@ -7,32 +7,40 @@ from mne.decoding import CSP
 
 def train_svm(X, y):
 
-    # Convert labels from 7,8,9,10 to 0,1,2,3
+    # Convert labels
     y = y - 7
 
-    # Split dataset
     X_train, X_test, y_train, y_test = train_test_split(
         X,
         y,
         test_size=0.2,
-        random_state=42,
-        stratify=y
+        stratify=y,
+        random_state=42
     )
 
-    # CSP + SVM Pipeline
-    model = Pipeline([
-        ("csp", CSP(n_components=4)),
-        ("svm", SVC(kernel="rbf"))
+    pipeline = Pipeline([
+        ("csp", CSP(
+            n_components=6,
+            reg=None,
+            log=True,
+            norm_trace=False
+        )),
+        ("svm", SVC(
+            kernel="rbf",
+            C=1,
+            gamma="scale"
+        ))
     ])
 
-    model.fit(X_train, y_train)
+    pipeline.fit(X_train, y_train)
 
-    predictions = model.predict(X_test)
+    predictions = pipeline.predict(X_test)
 
     accuracy = accuracy_score(y_test, predictions)
 
-    print(f"Accuracy: {accuracy:.4f}\n")
+    print("\nAccuracy:", accuracy)
 
+    print("\nClassification Report\n")
     print(classification_report(y_test, predictions))
 
-    return model
+    return pipeline
