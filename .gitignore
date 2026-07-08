@@ -8,8 +8,7 @@ __pycache__/
 # Dataset
 datasets/
 
-models/
-results/
+
 
 .ipynb_checkpoints/
 
