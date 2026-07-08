@@ -396,7 +396,7 @@ results/metrics/
 Compares the classification accuracy of different classical machine learning models.
 
 ```markdown
-![Model Accuracy](results/figures/model_accuracy.png)
+![Model Accuracy](./results/figures/model_accuracy.png)
 ```
 
 ---
