@@ -1,2 +1,27 @@
-# Dataset (too large for GitHub)
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+
+# Dataset
 datasets/
+
+models/
+results/
+
+.ipynb_checkpoints/
+
+.DS_Store
+
+.idea/
+
+.vscode/
+
+data/raw/
+
+*.pth
+*.pt
+*.joblib
+*.pkl
