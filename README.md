@@ -1,7 +1,5 @@
 # 🧠 NeuroBench
-# Image Test
 
-![Test Image](https://github.com/user-attachments/assets/131c3290-7a76-4939-a998-3075f7d58bc5)
 > **An End-to-End EEG Motor Imagery Classification Framework using Classical Machine Learning and Deep Learning**
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
@@ -398,7 +396,9 @@ results/metrics/
 Compares the classification accuracy of different classical machine learning models.
 
 ```markdown
-<img width="1223" height="666" alt="image" src="https://github.com/user-attachments/assets/131c3290-7a76-4939-a998-3075f7d58bc5" />
+
+
+![Accuracy Model](https://github.com/user-attachments/assets/131c3290-7a76-4939-a998-3075f7d58bc5)
 
 ```
 
