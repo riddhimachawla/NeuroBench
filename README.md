@@ -408,9 +408,9 @@ Compares the classification accuracy of different classical machine learning mod
 
 Illustrates the average cross-validation score for each classifier.
 
-```markdown
+
 ![Cross Validation](results/figures/cross_validation.png)
-```
+
 
 ---
 
@@ -418,9 +418,9 @@ Illustrates the average cross-validation score for each classifier.
 
 Displays class-wise prediction performance and highlights where misclassifications occur.
 
-```markdown
+
 ![Confusion Matrix](results/figures/confusion_matrix.png)
-```
+
 
 ---
 
